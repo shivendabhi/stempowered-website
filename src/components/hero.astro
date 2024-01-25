@@ -6,7 +6,7 @@ import { Icon } from "astro-icon";
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  class="grid lg:grid-cols-2 place-items-center pt-10 pb-8 md:pt-12 md:pb-15">
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={heroImage}
@@ -15,6 +15,7 @@ import { Icon } from "astro-icon";
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
       format="avif"
+      height={500}
     />
   </div>
   <div>
@@ -27,7 +28,7 @@ import { Icon } from "astro-icon";
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
-        href="#"
+        href="https://hcb.hackclub.com/donations/start/stempowered"
         target="_blank"
         class="flex gap-1 items-center justify-center"
         rel="noopener">
@@ -39,7 +40,7 @@ import { Icon } from "astro-icon";
         size="lg"
         style="outline"
         rel="noopener"
-        href="#"
+        href="https://www.justserve.org/projects/e7e85448-ad67-4bcc-a372-904dd8aec930"
         class="flex gap-1 items-center justify-center"
         target="_blank">
         <Icon class="text-black w-5 h-5" name="bx:bx-info-circle" />

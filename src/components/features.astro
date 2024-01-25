@@ -4,45 +4,27 @@ import { Icon } from "astro-icon";
 
 const features = [
   {
-    title: "Number 1",
+    title: "Online Programs",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    icon: "bx:bxs-briefcase",
+      "STEMPOWERed's virtual programs extend STEM education globally, eliminating barriers through engaging workshops and webinars. Our online initiatives connect students with interactive learning experiences, transcending geographical limitations.",
+    icon: "bx:bx-window-alt",
   },
   {
-    title: "Number 2",
+    title: "Outreach and Advocacy",
     description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    icon: "bx:bxs-window-alt",
+    "Advocating for diversity in STEM, STEMPOWERed collaborates with schools and industry partners to raise awareness. Our outreach efforts focus on fostering inclusivity and ensuring equal access to STEM opportunities for all aspiring individuals.",
+    icon: "bx:bx-buildings",
   },
   {
-    title: "Number 3",
+    title: "Resources",
     description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-    icon: "bx:bxs-data",
-  },
-  {
-    title: "Number 4",
-    description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    icon: "bx:bxs-bot",
-  },
-  {
-    title: "Number 5",
-    description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    icon: "bx:bxs-file-find",
-  },
-  {
-    title: "Number 6",
-    description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    icon: "bx:bxs-user",
+    "Empowering STEM journeys, STEMPOWERed provides a rich array of resources—from educational materials to scholarships and career guides. Our comprehensive platform ensures that everyone has the tools they need to navigate and succeed in the world of STEM. ",
+    icon: "bx:bx-paperclip",
   },
 ];
 ---
 
-<div class="mt-16 md:mt-0">
+<div class="pt-10 md:mt-0">
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
     What it is that we do
   </h2>
@@ -51,7 +33,7 @@ const features = [
   </p>
 </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16 mb-30">
   {
     features.map((item) => (
       <div class="flex gap-4 items-start">
@@ -59,7 +41,7 @@ const features = [
           <Icon class="text-white" name={item.icon} />
         </div>
         <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <h2 class="font-semibold text-2xl">{item.title}</h2>{" "}
           <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
         </div>
       </div>
