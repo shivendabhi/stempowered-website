@@ -1,37 +1,23 @@
 ---
 draft: false
-title: "I want the best college"
+title: "Genetic Engineering: Designing the Future of Life"
 snippet: ""
 image: {
-    src: "https://media.licdn.com/dms/image/D5612AQHDIGF5bvbCCA/article-cover_image-shrink_720_1280/0/1704183334526?e=1711584000&v=beta&t=wHqW5yzsVGLQ7rp4i6o9Xo6DIp34-euft8rbaorY1uE",
+    src: "https://media.licdn.com/dms/image/D5612AQFbcjIcCwAzUA/article-cover_image-shrink_720_1280/0/1706417156651?e=1712188800&v=beta&t=ZEWQ9i_1obV5IU2G1dQcRaxktAVBtoUj7LomESWy310",
     alt: ""
 }
-publishDate: "2024-01-02"
+publishDate: "2024-01-27"
 category: "Colleges and Careers"
-author: "Aadya Chaturvedi"
-tags: [college, career]
+author: "Daniel Basilio"
+tags: [engineering, career, genetics]
 ---
 
-‘Dear, just opt for science, get into one of the top colleges, and your life’s set’. 
+Genetic Engineering is the study and discipline of modifying and manipulating the composition of an organism through DNA, resulting in a gene transformation. This leads to a change in the phenotype of an individual or organism. There are multiple ways through which this technology is used, including gene splicing, editing, and recombinant DNA technology.
+The year 1953 was an important milestone in the exploration of genetic enigmas as James Watson and Francis Crick, using X-ray crystallography, made the groundbreaking discovery of DNA’s double helix structure. Thus, Watson and Crick were pioneers in this discovery. In the 1960s, there was yet another breakthrough, and this time a foundational one modelled by Hamilton Smith. Hamilton Smith's discovery of restriction enzymes was a crucial advance. Scientists could alter and recombine genetic material by using these enzymes to cut DNA at precise places. This finding established the foundation for further genetic engineering methods. In genetic research, restriction enzymes are a valuable tool since they can introduce foreign DNA for gene-editing purposes by cutting DNA at a specified place.
+Mass production of insulin, human growth hormones, follistim (an infertility treatment), human albumin, monoclonal antibodies, vaccinations, and numerous more medications have all been achieved in medicine through genetic engineering. It is used in agriculture to increase crop properties like improved nutritional value, herbicide tolerance, and pest resistance. Crops can even be engineered to build up an immunity against chemical pesticides and environmental pollutants.
+The invention of Artificial and Synthetic Chromosomes, by Dr. Craig Venter, is also an advancement in Genetic Engineering. In addition to making it easier to engineer several genes into plants, advances in molecular biology and an increased understanding of biological processes will facilitate the integration of whole and unique biochemical pathways or processes. Looking forward, the field presents intriguing possibilities and diverse applications, seeing for a better future for mankind.
 
-This is a phrase many Indian teens get to hear, and, sometimes, it’s not even a choice. Generally, parents believe that there’s no scope in other fields, leading kids to opt for subjects they might not even like. When someone scores well in their 10th finals and still chooses humanities or commerce, it’s a shock to people.
-
-For some context, the Indian curriculum for 11th-12th grade is divided into 4 main streams, with 5 subjects each. English is compulsory and one is chosen as per your liking.
-
-The four streams are:
-1. Non-Medical: Physics, Chemistry, Maths
-2. Medical: Physics, Chemistry, Biology
-3. Commerce: Accounts, Business Studies, Economics
-4. Humanities: Political Science, Geography, Psychology, History, Economics (any 3)
-
-Colleges aren’t the final destination, they’re merely launchpads or stepping stones that help propel you in the right direction. But for those few years before college, students put all their efforts into getting into the crème de la crème.
-
-A huge population of around 800,000 aspirants trying for engineering, and around 1,700,000 for medical colleges annually, coupled with only a few thousand elite seats, is a dangerous concoction.
-
-Many start their preparation for the dreaded JEE (Joint Engineering Entrance) and NEET (National Eligibility cum Entrance Test for medical colleges) exams as young as middle school, ready to sacrifice their social life. It’s not unheard of for parents to send their children away from home to ‘Kota’, the so-called city of dreams, the hub of all coaching institutes of India, to ensure that they have the best chance at getting into IITs or AIIMS, our Ivy-league equivalents.
-
-Imagine a stressed student, studying for more than 6 hours a day, away from home, not suited to the new environment or food. This is the reality for most kids living alone or in hostels in Kota. Kota is known as the heart of coaching, but due to such intense competition and isolation, it is also a place synonymous with student suicides. 
-
-Becoming a doctor or an engineer was the scope of STEM for the previous generation, but now people are learning about niche jobs, and new fields like AI are opening up.
-
-Maybe you like computer science but can’t stand chemistry; maybe it’s the other way around. Regardless of what you’re interested in, the landscape is changing now. Our educational system is transforming, trying to inculcate a more hands-on approach. Big colleges like the IITs have started offering remote diplomas and degrees to make quality STEM education a bit more accessible to all. The situation’s not as bleak as it was years ago but change will take time.
+Citations:
+https://www.ncbi.nlm.nih.gov/books/NBK424553/#:~:text=Artificial%20and%20Synthetic%20Chromosomes,novel%20biochemical%20pathways%20or%20processes
+https://www.synthego.com/learn/genome-engineering-history
+https://newengineer.com/blog/the-future-of-genetic-engineering-1383253
