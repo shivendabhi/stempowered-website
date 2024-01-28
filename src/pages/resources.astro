@@ -1,0 +1,244 @@
+---
+import Container from "@components/container.astro";
+import Layout from "@layouts/Layout.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+const academic = [
+  {
+    title: "Code.org",
+    description: 
+    "Offers free coding lessons and resources to promote computer science education, with a focus on making it accessible to all.",
+    website: "https://Code.org/",
+},
+  {
+    title: "EdX",
+    description: 
+    "Founded by Harvard University and MIT, edX provides affordable education in various subjects, including computer science, business, science, and more. Learners can access course materials, engage with instructors and peers, and earn certificates or even academic credit for completed courses.",
+      website: "https://www.edx.org/",
+},
+  {
+    title: "OpenStax",
+    description:
+    "Provides free, peer-reviewed, openly licensed textbooks, suitable for college-level courses in various subjects.",
+    website: "https://openstax.org/",
+  },
+  {
+    title: "Gutenberg",
+    description:
+    "Offers over 60,000 free ebooks, including many classic works in science and mathematics.",
+    website: "https://www.gutenberg.org/",
+  },
+  {
+    title: "STEM Learning",
+    description:
+    " A UK-based resource offering teaching and learning materials for science, technology, engineering, and mathematics.",
+    website: "https://www.stem.org.uk/",
+  },
+  {
+    title: "MIT OpenCourseWare",
+    description: 
+    "MIT offers free access to course materials from a vast array of subjects.",
+    website: "https://ocw.mit.edu/",
+  },
+  {
+    title: "Khan Academy",
+    description: 
+    "Provides free online educational content, including tutorials and practice exercises in various subjects.",
+    website: "https://www.khanacademy.org/",
+
+  },
+  {
+    title: "Open Yale Courses",
+    description: 
+    "Provides free, open-access course materials for various subjects, including computer science, engineering, and more.",
+    website: "https://oyc.yale.edu/",
+  },
+  {
+    title:"Stanford Online",
+    description: "Provides free online courses, certificates, and degrees in various subjects, including computer science, engineering, and more.",
+    website: "https://online.stanford.edu/",
+  },
+];
+
+const career = [
+    {
+        title: "Indeed Career Guide",
+        description:
+        "Provides articles and resources on resume writing, cover letters, and job search strategies, which can be valuable for college applications.",
+        website: "https://www.indeed.com/career-advice/",
+    },
+    {
+        title: "ResumeGenius",
+        description:
+        "Offers resume-building tools, templates, and tips to help individuals create professional resumes for job applications and college admissions.",
+        website: "https://resumegenius.com/",
+    },
+    {
+        title: "HubSpot Academy",
+        description:
+        "Offers free courses on digital marketing, sales, and customer service, providing valuable skills for individuals interested in STEM-related marketing roles.",
+        website: "https://academy.hubspot.com/",
+    },
+    {
+        title: "IBM Skills",
+        description: 
+        "Offers free courses on cloud computing, artificial intelligence, and other emerging technologies by IBM.",
+        website: "https://skillsbuild.org/",
+    },
+    {
+        title: "CollegeVine",
+        description: 
+        "Provides tools and resources for college planning, including essay guidance, application strategy, and admissions insights.",
+        website: "https://www.collegevine.com/",
+    },
+    {
+        title: "College Essay Guy",
+        description: 
+        "Provides resources, guides, and workshops to help individuals craft compelling and authentic college application essays.",
+        website: "https://www.collegeessayguy.com/",
+    },
+    {
+        title: "The Princeton Review",
+        description: 
+        "Offers articles and advice on various aspects of college admissions, including application essays and resume building.",
+        website:  "https://www.princetonreview.com/",
+    },
+    {
+        title: "Fastweb - College Scholarships and Admissions",
+        description: 
+        "In addition to scholarship searches, Fastweb provides resources and articles on college admissions, essays, and applications.",
+        website:  "https://www.fastweb.com/",
+    },
+];
+
+const opportunities = [
+    {
+        title: "Girls Who Code",
+        description:
+        " A nonprofit organization dedicated to closing the gender gap in technology. Provides coding programs and resources for girls.",
+        website: "https://girlswhocode.com/",
+    },
+    {
+        title: "NASA STEM Engagement",
+        description:
+        "Offers educational resources and programs for students interested in science, technology, engineering, and mathematics.",
+        website: "https://www.nasa.gov/learning-resources/stem-engagement/",
+    },
+    {
+        title: "National Science Foundation",
+        description:
+        "Provides information on STEM-related scholarships, internships, and research opportunities.",
+        website: "https://www.nsf.gov/careers/",
+    },
+    {
+        title: "National Society of Black Engineers (NSBE)",
+        description: 
+        "Provides resources and support to Black individuals pursuing careers in engineering and related STEM fields.",
+        website: "https://www.nsbe.org/",
+    },
+    {
+        title: "STEM Careers Coalition",
+        description: 
+        "A coalition offering resources and insights to prepare students, especially those underrepresented in STEM, for STEM careers.",
+        website: "https://stemcareerscoalition.org/",
+    },
+    {
+        title: "Society of Women Engineers (SWE)",
+        description: 
+        "A global organization supporting women in engineering and technology. Offers resources, scholarships, and networking opportunities.",
+        website: "https://swe.org/", 
+    },
+    {
+        title: "National Girls Collaborative Project (NGCP)",
+        description: 
+        "Connects organizations and individuals to strengthen STEM education for girls. Provides resources, programs, and opportunities.",
+        website: "https://ngcproject.org/", 
+    },
+    {
+        title: "STEMconnector",
+        description: 
+        "Connects students with STEM resources, including scholarships, internships, and information about STEM careers.",
+        website: "https://www.stemconnector.com/", 
+    },
+    {
+        title: "Coalition for College",
+        description: 
+        " A college planning platform that provides tools for building a digital portfolio and preparing for the college application process.",
+        website: "https://www.coalitionforcollegeaccess.org/", 
+    },
+];
+---
+
+<Layout title="Resources">
+  <Container>
+    <Sectionhead>
+        <Fragment slot="title">Resources</Fragment>
+        <Fragment slot="desc">
+        Resources for education, career, and opportunities.
+        </Fragment>
+      </Sectionhead>
+
+      <div class="pt-10 md:mt-0">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+          Academic
+        </h2>
+      </div>
+      
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16 mb-30">
+        {
+          academic.map((item) => (
+            <div class="flex gap-4 items-start">
+              <div>
+                <a href={item.website}>
+                  <h2 class="font-semibold text-2xl">{item.title}</h2>{" "}
+                </a>
+                <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="pt-10 md:mt-0">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+          Career
+        </h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16 mb-30">
+        {
+          career.map((item) => (
+            <div class="flex gap-4 items-start">
+              <div>
+                <a href={item.website}>
+                  <h2 class="font-semibold text-2xl">{item.title}</h2>{" "}
+                </a>
+                <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="pt-10 md:mt-0">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+          opportunities
+        </h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16 mb-30">
+        {
+          opportunities.map((item) => (
+            <div class="flex gap-4 items-start">
+              <div>
+                <a href={item.website}>
+                  <h2 class="font-semibold text-2xl">{item.title}</h2>{" "}
+                </a>
+                <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+  </Container>
+</Layout>
