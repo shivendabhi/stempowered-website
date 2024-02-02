@@ -1,0 +1,106 @@
+---
+import Container from "@components/container.astro";
+import Layout from "@layouts/Layout.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import arrowImage from "assets/rightarrow.png";
+import { Picture } from "astro:assets";
+
+const academic = [
+  //add here 
+  {
+    title: "Code.org",
+    description: 
+    "Offers free coding lessons and resources to promote computer science education, with a focus on making it accessible to all.",
+    website: "https://Code.org/",
+},
+  {
+    title: "EdX",
+    description: 
+    "Founded by Harvard University and MIT, edX provides affordable education in various subjects, including computer science, business, science, and more. Learners can access course materials, engage with instructors and peers, and earn certificates or even academic credit for completed courses.",
+      website: "https://www.edx.org/",
+},
+  {
+    title: "OpenStax",
+    description:
+    "Provides free, peer-reviewed, openly licensed textbooks, suitable for college-level courses in various subjects.",
+    website: "https://openstax.org/",
+  },
+  {
+    title: "Gutenberg",
+    description:
+    "Offers over 60,000 free ebooks, including many classic works in science and mathematics.",
+    website: "https://www.gutenberg.org/",
+  },
+  {
+    title: "STEM Learning",
+    description:
+    " A UK-based resource offering teaching and learning materials for science, technology, engineering, and mathematics.",
+    website: "https://www.stem.org.uk/",
+  },
+  {
+    title: "MIT OpenCourseWare",
+    description: 
+    "MIT offers free access to course materials from a vast array of subjects.",
+    website: "https://ocw.mit.edu/",
+  },
+  {
+    title: "Khan Academy",
+    description: 
+    "Provides free online educational content, including tutorials and practice exercises in various subjects.",
+    website: "https://www.khanacademy.org/",
+
+  },
+  {
+    title: "Open Yale Courses",
+    description: 
+    "Provides free, open-access course materials for various subjects, including computer science, engineering, and more.",
+    website: "https://oyc.yale.edu/",
+  },
+  {
+    title:"Stanford Online",
+    description: "Provides free online courses, certificates, and degrees in various subjects, including computer science, engineering, and more.",
+    website: "https://online.stanford.edu/",
+  },
+];
+---
+
+<Layout title="Academic">
+    <Container>
+      <Sectionhead>
+          <Fragment slot="title">Academic Resources</Fragment>
+          <h1 slot="desc">
+          Resources for education.
+          </h1>
+        </Sectionhead>
+        
+        <div class="text-lg mt-4 text-center flex items-center justify-center">
+          <a href={"/resources"} class="bg-white p">
+            <div_1 class="flex gap-2 items-start">
+              <h2 class="font-semibold text-2xl">{"Back"}</h2>{" "}
+                <div_3 class="mt-1 w-6 h-10 shrink-0">
+                  <Picture
+                    src={arrowImage}
+                    alt="Arrow"
+                    />
+                </div_3>
+            </div_1>
+          </a>
+        </div>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16 mb-30">
+          {
+            academic.map((item) => (
+              <div class="flex gap-4 items-start">
+                <div>
+                  <a href={item.website}>
+                    <h2 class="font-semibold text-2xl">{item.title}</h2>{" "}
+                  </a>
+                  <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+  
+</Container>
+</Layout>  

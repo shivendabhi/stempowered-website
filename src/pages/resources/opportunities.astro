@@ -1,0 +1,106 @@
+---
+import Container from "@components/container.astro";
+import Layout from "@layouts/Layout.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import arrowImage from "assets/rightarrow.png";
+import { Picture } from "astro:assets";
+
+const opportunities = [
+      //add here 
+      {
+        title: "Girls Who Code",
+        description:
+        " A nonprofit organization dedicated to closing the gender gap in technology. Provides coding programs and resources for girls.",
+        website: "https://girlswhocode.com/",
+    },
+    {
+        title: "NASA STEM Engagement",
+        description:
+        "Offers educational resources and programs for students interested in science, technology, engineering, and mathematics.",
+        website: "https://www.nasa.gov/learning-resources/stem-engagement/",
+    },
+    {
+        title: "National Science Foundation",
+        description:
+        "Provides information on STEM-related scholarships, internships, and research opportunities.",
+        website: "https://www.nsf.gov/careers/",
+    },
+    {
+        title: "National Society of Black Engineers (NSBE)",
+        description: 
+        "Provides resources and support to Black individuals pursuing careers in engineering and related STEM fields.",
+        website: "https://www.nsbe.org/",
+    },
+    {
+        title: "STEM Careers Coalition",
+        description: 
+        "A coalition offering resources and insights to prepare students, especially those underrepresented in STEM, for STEM careers.",
+        website: "https://stemcareerscoalition.org/",
+    },
+    {
+        title: "Society of Women Engineers (SWE)",
+        description: 
+        "A global organization supporting women in engineering and technology. Offers resources, scholarships, and networking opportunities.",
+        website: "https://swe.org/", 
+    },
+    {
+        title: "National Girls Collaborative Project (NGCP)",
+        description: 
+        "Connects organizations and individuals to strengthen STEM education for girls. Provides resources, programs, and opportunities.",
+        website: "https://ngcproject.org/", 
+    },
+    {
+        title: "STEMconnector",
+        description: 
+        "Connects students with STEM resources, including scholarships, internships, and information about STEM careers.",
+        website: "https://www.stemconnector.com/", 
+    },
+    {
+        title: "Coalition for College",
+        description: 
+        " A college planning platform that provides tools for building a digital portfolio and preparing for the college application process.",
+        website: "https://www.coalitionforcollegeaccess.org/", 
+    },
+];
+---
+
+<Layout title="Opportunity">
+    <Container>
+      <Sectionhead>
+          <Fragment slot="title">Opportunities Resources</Fragment>
+          <Fragment slot="desc">
+          Resources for opportunities.
+          </Fragment>
+        </Sectionhead>
+        
+        <div class="text-lg mt-4 text-center flex items-center justify-center">
+            <a href={"/resources"} class="bg-white p">
+              <div_1 class="flex gap-2 items-start">
+                <h2 class="font-semibold text-2xl">{"Back"}</h2>{" "}
+                  <div_3 class="mt-1 w-6 h-10 shrink-0">
+                    <Picture
+                      src={arrowImage}
+                      alt="Arrow"
+                      />
+                  </div_3>
+              </div_1>
+            </a>
+          </div>
+  
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16 mb-30">
+          {
+            opportunities.map((item) => (
+              <div class="flex gap-4 items-start">
+                <div>
+                  <a href={item.website}>
+                    <h2 class="font-semibold text-2xl">{item.title}</h2>{" "}
+                  </a>
+                  <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+  
+</Container>
+</Layout>  

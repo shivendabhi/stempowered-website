@@ -1,0 +1,100 @@
+---
+import Container from "@components/container.astro";
+import Layout from "@layouts/Layout.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import arrowImage from "assets/rightarrow.png";
+import { Picture } from "astro:assets";
+
+const career = [
+      //add here 
+    {
+        title: "Indeed Career Guide",
+        description:
+        "Provides articles and resources on resume writing, cover letters, and job search strategies, which can be valuable for college applications.",
+        website: "https://www.indeed.com/career-advice/",
+    },
+    {
+        title: "ResumeGenius",
+        description:
+        "Offers resume-building tools, templates, and tips to help individuals create professional resumes for job applications and college admissions.",
+        website: "https://resumegenius.com/",
+    },
+    {
+        title: "HubSpot Academy",
+        description:
+        "Offers free courses on digital marketing, sales, and customer service, providing valuable skills for individuals interested in STEM-related marketing roles.",
+        website: "https://academy.hubspot.com/",
+    },
+    {
+        title: "IBM Skills",
+        description: 
+        "Offers free courses on cloud computing, artificial intelligence, and other emerging technologies by IBM.",
+        website: "https://skillsbuild.org/",
+    },
+    {
+        title: "CollegeVine",
+        description: 
+        "Provides tools and resources for college planning, including essay guidance, application strategy, and admissions insights.",
+        website: "https://www.collegevine.com/",
+    },
+    {
+        title: "College Essay Guy",
+        description: 
+        "Provides resources, guides, and workshops to help individuals craft compelling and authentic college application essays.",
+        website: "https://www.collegeessayguy.com/",
+    },
+    {
+        title: "The Princeton Review",
+        description: 
+        "Offers articles and advice on various aspects of college admissions, including application essays and resume building.",
+        website:  "https://www.princetonreview.com/",
+    },
+    {
+        title: "Fastweb - College Scholarships and Admissions",
+        description: 
+        "In addition to scholarship searches, Fastweb provides resources and articles on college admissions, essays, and applications.",
+        website:  "https://www.fastweb.com/",
+    },
+];
+---
+
+<Layout title="Career">
+    <Container>
+      <Sectionhead>
+          <Fragment slot="title">Career Resources</Fragment>
+          <Fragment slot="desc">
+          Resources for career.
+          </Fragment>
+        </Sectionhead>
+
+        <div class="text-lg mt-4 text-center flex items-center justify-center">
+            <a href={"/resources"} class="bg-white p">
+              <div_1 class="flex gap-2 items-start">
+                <h2 class="font-semibold text-2xl">{"Back"}</h2>{" "}
+                  <div_3 class="mt-1 w-6 h-10 shrink-0">
+                    <Picture
+                      src={arrowImage}
+                      alt="Arrow"
+                      />
+                  </div_3>
+              </div_1>
+            </a>
+          </div>
+  
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16 mb-30">
+          {
+            career.map((item) => (
+              <div class="flex gap-4 items-start">
+                <div>
+                  <a href={item.website}>
+                    <h2 class="font-semibold text-2xl">{item.title}</h2>{" "}
+                  </a>
+                  <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+  
+</Container>
+</Layout>  
